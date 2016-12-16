@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ngClassifieds</title>
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/mdi/css/materialdesignicons.min.css" media="all">
+</head>
+<body ng-app= "ngClassifieds" ng-controller = "classifiedsCtrl">
+
+<!--<input type="text"  placeholder="Enter your name" ng-model="name">
+<input type="text" ng-model="name1.first"> -->
+<!--ng-model is binding the header with the textbox, any change in the textbox will be reflected on the header -->
+
+<!--anything woth double curly braces will be represented as the value of it -
+	<h1>{{name}}, how are u today?</h1>
+	<h1>{{name1.first + " " + name1.second}}</h1>
+	<h1>{{7+2}}</h1> -->
+	<hello-world></hello-world>
+
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<p><strong>ngClassifieds</strong></p>
+			<md-buttons>
+				<!-- put an icon using md-icons directives -->
+				<md-icon class = "mdi mdi-plus-circle"></md-icon>
+				New classifier
+			</md-buttons>
+		</div>
+	</md-toolbar>
+
+	<script src = "node_modules/angular/angular.js"></script>
+	<script src = "node_modules/angular-animate/angular-animate.js"></script>
+
+	<script src = "node_modules/angular-aria/angular-aria.js"></script>
+
+	<script src = "node_modules/angular-material/angular-material.js"></script>
+	<script src= "scripts/app.js"></script>
+	<script src= "components/classifieds.ctr.js"></script>
+</body>
+</html>
